@@ -1,0 +1,22 @@
+// Container widths
+//
+// Set the container width, and override it for fixed navbars in media queries.
+.container {
+  padding-left: $golden-ratio-4 !important;
+  padding-right: $golden-ratio-4 !important;
+
+  @include respond(md, sm) {
+    padding-left: $golden-ratio-3 !important;
+    padding-right: $golden-ratio-3 !important;
+  }
+
+  @include respond(xs) {
+    padding-left: $golden-ratio-2 !important;
+    padding-right: $golden-ratio-2 !important;
+  }
+}
+
+// Fluid container
+//
+// Utilizes the mixin meant for fixed width containers, but with 100% width for
+// fluid, full width layouts.
